@@ -74,4 +74,4 @@ done < "$input"
 # Wait for all background jobs to complete
 wait
 
-echo "All fast Nmap scans completed. Results saved in $full_session_dir."
+echo "TCP & UDP scans completed. Results saved in $full_session_dir."
