@@ -42,7 +42,7 @@ run_fast_nmap_scan() {
   echo "----------------------------------" >> $output_file
 
   # TCP Scan
-  nmap -Pn -p- -sC -sV -O -T4 $target >> $output_file
+  nmap -Pn -p- -sC -sV -O -T4 --min-rate=$rate -T$timing  $target >> $output_file
 
   # UDP Scan
   nmap -Pn -p- -sC -sV -sU -O -T5 $target >> $output_file
